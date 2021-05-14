@@ -11,7 +11,7 @@ targetURL = "https://www.gimpo.go.kr/portal/selectBbsNttList.do?key=999&bbsNo=29
 textName = 'recentInfo.txt'
 periodSecond = 60
 
-apiKey = '1824991885:AAHhY0w_cmos2xsNGnfRgGStGVfADi5q7rw'
+apiKey = '(make the chatbot in Telegram and set an API key)'
 chatID = 1683823322
 bot = telegram.Bot(token=apiKey)
 
