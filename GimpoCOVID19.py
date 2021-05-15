@@ -80,4 +80,4 @@ try:
     Timer()
     print('서버가 실행되었습니다!')
 except:
-    print('긴급! 서버에 에러가 발생하였습니다!')
+    bot.send_message(chat_id=chatID, text='긴급! 서버에 에러가 발생하였습니다!')
