@@ -71,10 +71,13 @@ def ChatBotSender(bot, update):
 
 #
 
-updater = Updater(token=apiKey)
-dispatcher = updater.dispatcher
-updater.start_polling()
-echoHandler = MessageHandler(Filters.text, ChatBotSender)
-dispatcher.add_handler(echoHandler)
-Timer()
-print('서버가 실행되었습니다!')
+try:
+    updater = Updater(token=apiKey)
+    dispatcher = updater.dispatcher
+    updater.start_polling()
+    echoHandler = MessageHandler(Filters.text, ChatBotSender)
+    dispatcher.add_handler(echoHandler)
+    Timer()
+    print('서버가 실행되었습니다!')
+except:
+    print('긴급! 서버에 에러가 발생하였습니다!')
